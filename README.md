@@ -1,5 +1,7 @@
 # prolog-car-race
 
+![](https://github.com/Arrr-az/prolog-car-race/blob/main/README_gif.gif)
+
 ## What is it?
 It's a simulation of a self-driving car with movements based on prolog. Developed as an academic activity for the course of Artificial Inteligence (UFES - Alegre).
 
