@@ -12,7 +12,8 @@ In total, 7 versions of the prolog module were made, from v1 to v7-fa, each an u
 ## How can you run it?
 To run this program locally, you'll need [SWI-Prolog](https://www.swi-prolog.org/download/stable) installed in your machine. Don't forget to check one of the "add swipl to your system PATH" options during the installation.
 
-1. Download the .zip
+With SWI-Prolog installed:
+1. Download the repository .zip
 2. Extract the files to your folder/directory of choice
 3. Open a terminal in this same directory and type, for example, **swipl -s "v1.pl"** if you want to see the v1.pl module in action (not very interesting, might I add... it just moves the car forward)
 4. Open your internet browser of choice and type **http://localhost:8080/** in the search bar. If all goes well, the simulation will start to run
