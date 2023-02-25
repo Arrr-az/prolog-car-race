@@ -20,3 +20,6 @@ In total, 7 versions of the prolog module were made, from v1 to v7-fa, each an u
 2. Say you wanna see v2.pl at it, type **swipl -s "v2.pl"** in the same terminal
 3. Refresh your browser tab and *voilà*
 WARNING: some browsers will keep running the previous prolog module even after you go through these steps. To fix this, clear your browser's recent cache (last hour or last 24 hours will do) and try again.
+
+## Can I control the car using keyboard keys?
+Sure thing! Just go to the "main.js" file, line 10, and set **const use_prolog = true;** to **const use_prolog = false;**
