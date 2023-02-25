@@ -66,8 +66,9 @@ acao([X,Y,ANGLE,S1,S2,S3,S4,S5], [0,1,0,0], Pontuacao) :-
 
 /*R2: RECUANDO AO SE VER 'GRUDADO' EM UM OBSTÁCULO À FRENTE, IMPORTANTE PARA MINIMIZAR BUGS*/
 acao([X,Y,ANGLE,S1,S2,S3,S4,S5], [0,1,0,0], Pontuacao) :-
-    (S2 > 0.8, S3 > 0.8);
-    (S4 > 0.8, S3 > 0.8),
+    (S2 > 0.8;
+    S3 > 0.8;
+    S4 > 0.8),
     Pontuacao = 0.1.
 
 /*R3: AJUSTANDO ÂNGULO: SENTIDO HORÁRIO*/
@@ -83,27 +84,29 @@ acao([X,Y,ANGLE,S1,S2,S3,S4,S5], [1,0,0,1], Pontuacao) :-
 /*R5: NÃO BATER NA PAREDE DA DIREITA*/
 acao([X,Y,ANGLE,S1,S2,S3,S4,S5], [1,0,1,0], Pontuacao) :-
     S5 > 0.8,
-    X > 145,
+    X > 160,
     Pontuacao = 0.3.
 
 /*R6: NÃO BATER NA PAREDE DA ESQUERDA*/
 acao([X,Y,ANGLE,S1,S2,S3,S4,S5], [1,0,0,1], Pontuacao) :-
     S1 > 0.8,
-    X < 50,
+    X < 40,
     Pontuacao = 0.3.
 
 /*R7: SE LIVRAR DE UM CARRO MUITO PRÓXIMO À DIREITA*/
 acao([X,Y,ANGLE,S1,S2,S3,S4,S5], [1,0,1,0], Pontuacao) :-
-    S5 > 0.7,
-    X > 50,
-    X < 145,
+    (S4 > 0.6;
+    S5 > 0.7),
+    X > 40,
+    X < 160,
     Pontuacao = 0.4.
 
 /*R8: SE LIVRAR DE UM CARRO MUITO PRÓXIMO À ESQUERDA*/
 acao([X,Y,ANGLE,S1,S2,S3,S4,S5], [1,0,0,1], Pontuacao) :-
-    S1 > 0.7,
-    X > 50,
-    X < 145,
+    (S2 > 0.6;
+    S1 > 0.7),
+    X > 40,
+    X < 160,
     Pontuacao = 0.4.
 
 /*R9: FRENTE, ENQUANTO O ÂNGULO ESTIVER PRÓXIMO DE 0 E NÃO HOUVER NENHUM OBSTÁCULO CRÍTICO À FRENTE*/
