@@ -21,7 +21,7 @@ With SWI-Prolog installed:
 ## Ok, I tested one of them. How can I see the other prolog modules operating the car?
 1. Go to the terminal and stop the Swipl process you just started with **CTRL + C** and then typing **e** (not **E**)
 2. Say you wanna see v2.pl at it, type **swipl -s "v2.pl"** in the same terminal
-3. Refresh your browser tab and *voilà*
+3. Refresh your browser tab and *voilà*  
 WARNING: some browsers will keep running the previous prolog module even after you go through these steps. To fix this, clear your browser's recent cache (last hour or last 24 hours will do) and try again.
 
 ## Can I control the car using keyboard keys?
