@@ -16,7 +16,7 @@ In total, 7 versions of the prolog module were made, from v1 to v7-fa, each an u
 4. Open your internet browser of choice and type **http://localhost:8080/** in the search bar. If all goes well, the simulation will start to run
 
 ## Ok, I tested one of them. How can I see the other prolog modules operating the car?
-1. Go to the terminal and stop the Swipl process you just started by typping **CTRL + C** and then typing **e** (not **E**)
+1. Go to the terminal and stop the Swipl process you just started with **CTRL + C** and then typing **e** (not **E**)
 2. Say you wanna see v2.pl at it, type **swipl -s "v2.pl"** in the same terminal
 3. Refresh your browser tab and *voilà*
 WARNING: some browsers will keep running the previous prolog module even after you go through these steps. To fix this, clear your browser's recent cache (last hour or last 24 hours will do) and try again.
