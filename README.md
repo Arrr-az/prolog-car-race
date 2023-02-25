@@ -22,4 +22,7 @@ In total, 7 versions of the prolog module were made, from v1 to v7-fa, each an u
 WARNING: some browsers will keep running the previous prolog module even after you go through these steps. To fix this, clear your browser's recent cache (last hour or last 24 hours will do) and try again.
 
 ## Can I control the car using keyboard keys?
-Sure thing! Just go to the "main.js" file, line 10, and set **const use_prolog = true;** to **const use_prolog = false;**
+Sure thing! Just go to the "main.js" file, line 10, and change:
+**const use_prolog = true;**
+to
+**const use_prolog = false;**
