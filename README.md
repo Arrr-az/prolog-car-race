@@ -10,6 +10,8 @@ The HTML+CSS+Javascript sections of the code were presented to us as it shows by
 In total, 7 versions of the prolog module were made, from v1 to v7-fa, each an updated version of the previous one. "v7-fa" being the best I could manage.
 
 ## How can you run it?
+To run this program locally, you'll need [SWI-Prolog](https://www.swi-prolog.org/download/stable) installed in your machine. Don't forget to check one of the "add swipl to your system PATH" options during the installation.
+
 1. Download the .zip
 2. Extract the files to your folder/directory of choice
 3. Open a terminal in this same directory and type, for example, **swipl -s "v1.pl"** if you want to see the v1.pl module in action (not very interesting, might I add... it just moves the car forward)
