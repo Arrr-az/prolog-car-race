@@ -3,7 +3,7 @@
 ![](https://github.com/Arrr-az/prolog-car-race/blob/main/README_gif.gif)
 
 ## What is it?
-It's a simulation of a self-driving car with movements based on prolog. Developed as an academic activity for the course of Artificial Inteligence in UFES (Alegre) CS graduation.
+It's a simulation of a self-driving car with movements based on Prolog, adapted from [Radu Mariescu-Istodor's work using Javascript](https://www.youtube.com/watch?v=NkI9ia2cLhc&list=PLB0Tybl0UNfYoJE7ZwsBQoDIG4YN9ptyY). Developed as an academic activity for the course of Artificial Inteligence in UFES (Alegre) CS graduation.
 
 The HTML+CSS+Javascript sections of the code were presented to us as it shows by the course professor (Jacson Rodrigues Correia da Silva), our job being the implementation of the 'decision-making' module, made with Prolog code.
 
