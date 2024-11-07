@@ -12,21 +12,28 @@ const car=new Car(road.getLaneCenter(1),initial_pos,30,50,canvas.width,(use_prol
 
 const traffic=[
     car,
-    //1º
-    new Car(road.getLaneCenter(0),_b1+_d*3,car_width,car_height,canvas.width,"DUMMY",speed,_colors[1]),
-    new Car(road.getLaneCenter(1),_b1+_d*2,car_width,car_height,canvas.width,"DUMMY",speed,_colors[2]),
-    new Car(road.getLaneCenter(2),_b1+_d*1,car_width,car_height,canvas.width,"DUMMY",speed,_colors[3]),
-    new Car(road.getLaneCenter(3),_b1+_d*0,car_width,car_height,canvas.width,"DUMMY",speed,_colors[4]),
-    //2º
-    new Car(road.getLaneCenter(0),_b2+_d*3,car_width,car_height,canvas.width,"DUMMY",speed,_colors[5]),
-    new Car(road.getLaneCenter(1),_b2+_d*2,car_width,car_height,canvas.width,"DUMMY",speed,_colors[6]),
-    new Car(road.getLaneCenter(2),_b2+_d*1,car_width,car_height,canvas.width,"DUMMY",speed,_colors[7]),
-    new Car(road.getLaneCenter(3),_b2+_d*0,car_width,car_height,canvas.width,"DUMMY",speed,_colors[8]),
-    //3º
-    new Car(road.getLaneCenter(0),_b3+_d*3,car_width,car_height,canvas.width,"DUMMY",speed,_colors[9]),
-    new Car(road.getLaneCenter(1),_b3+_d*2,car_width,car_height,canvas.width,"DUMMY",speed,_colors[10]),
-    new Car(road.getLaneCenter(2),_b3+_d*1,car_width,car_height,canvas.width,"DUMMY",speed,_colors[11]),
-    new Car(road.getLaneCenter(3),_b3+_d*0,car_width,car_height,canvas.width,"DUMMY",speed,_colors[12])
+    // //1º
+    // new Car(road.getLaneCenter(0),_b1+_d*3,car_width,car_height,canvas.width,"DUMMY",speed,_colors[1]),
+    // new Car(road.getLaneCenter(1),_b1+_d*2,car_width,car_height,canvas.width,"DUMMY",speed,_colors[2]),
+    // new Car(road.getLaneCenter(2),_b1+_d*1,car_width,car_height,canvas.width,"DUMMY",speed,_colors[3]),
+    // new Car(road.getLaneCenter(3),_b1+_d*0,car_width,car_height,canvas.width,"DUMMY",speed,_colors[4]),
+    // //2º
+    // new Car(road.getLaneCenter(0),_b2+_d*3,car_width,car_height,canvas.width,"DUMMY",speed,_colors[5]),
+    // new Car(road.getLaneCenter(1),_b2+_d*2,car_width,car_height,canvas.width,"DUMMY",speed,_colors[6]),
+    // new Car(road.getLaneCenter(2),_b2+_d*1,car_width,car_height,canvas.width,"DUMMY",speed,_colors[7]),
+    // new Car(road.getLaneCenter(3),_b2+_d*0,car_width,car_height,canvas.width,"DUMMY",speed,_colors[8]),
+    // //3º
+    // new Car(road.getLaneCenter(0),_b3+_d*3,car_width,car_height,canvas.width,"DUMMY",speed,_colors[9]),
+    // new Car(road.getLaneCenter(1),_b3+_d*2,car_width,car_height,canvas.width,"DUMMY",speed,_colors[10]),
+    // new Car(road.getLaneCenter(2),_b3+_d*1,car_width,car_height,canvas.width,"DUMMY",speed,_colors[11]),
+    // new Car(road.getLaneCenter(3),_b3+_d*0,car_width,car_height,canvas.width,"DUMMY",speed,_colors[12])
+
+    new Car(road.getLaneCenter(0),-170,car_width,car_height,canvas.width,"DUMMY",speed,"red"),
+    new Car(road.getLaneCenter(1),-210,car_width,car_height,canvas.width,"DUMMY",speed,"orange"),
+    new Car(road.getLaneCenter(2),-260,car_width,car_height,canvas.width,"DUMMY",speed,"red"),
+    new Car(road.getLaneCenter(1),-310,car_width,car_height,canvas.width,"DUMMY",speed,"green"),
+    new Car(road.getLaneCenter(2),-370,car_width,car_height,canvas.width,"DUMMY",speed,"pink"),
+    new Car(road.getLaneCenter(3),-420,car_width,car_height,canvas.width,"DUMMY",speed,"white")
 ];
 
 animate();
